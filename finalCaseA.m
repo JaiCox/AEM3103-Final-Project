@@ -1,7 +1,5 @@
 
 %	Sets needed inital values and time span
-	H		=	2;			% Initial Height, m
-	R		=	0;			% Initial Range, m
 	to		=	0;			% Initial Time, sec
 	tf		=	6;			% Final Time, sec
 	tspan	=	[to tf];
