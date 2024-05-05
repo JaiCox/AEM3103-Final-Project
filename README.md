@@ -13,17 +13,23 @@
  
   # Code Listing
   [paperAirplane.m](https://github.com/JaiCox/AEM3103-Final-Project/blob/main/paperAirplane.m) - Runs setupSim and plots results from original experiment
+  
   [setupSim.m](https://github.com/JaiCox/AEM3103-Final-Project/blob/main/setupSim.m) - Defines inital variables for cases
+  
   [EqMotion.m](https://github.com/JaiCox/AEM3103-Final-Project/blob/main/EqMotion.m) - Equations of motion for the aircraft
+  
   [finalCaseA.m](https://github.com/JaiCox/AEM3103-Final-Project/blob/main/finalCaseA.m) - Varies initial velocity or flight path angle independently
+  
   [finalCaseB.m](https://github.com/JaiCox/AEM3103-Final-Project/blob/main/finalCaseB.m) - Plots 100 random runs of varying velocities and path angles and calculates average trajectory
+  
   [timeDerivatives.m](https://github.com/JaiCox/AEM3103-Final-Project/blob/main/timeDerivatives.m) - Computes and plots time derivatives for the average trajectory in case B
+  
   [num_der_central.m](https://github.com/JaiCox/AEM3103-Final-Project/blob/main/num_der_central.m) - Formula for midpoint method
   
   # Figures
 
   ## Fig. 1: Single Parameter Variation
-  ![tempName](https://github.com/JaiCox/AEM3103-Final-Project/blob/main/Figures/caseAFig.jpg)
+  ![Single Parameter fig](https://github.com/JaiCox/AEM3103-Final-Project/blob/main/Figures/caseAFig.jpg)
   <2D trajectory simulated by varying single parameter at at time>
   <The above plot should also show the nominal trajectory>
 
