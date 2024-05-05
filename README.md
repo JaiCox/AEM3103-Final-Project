@@ -1,4 +1,4 @@
-###Paper Airplane Numerical Study
+# Paper Airplane Numerical Study
   Final Project: AEM 3103 Spring 2024
 
   - By: Jaidyn Cox
@@ -13,7 +13,8 @@
  
   # Code Listing
   A list of each function/script and a single-line description of what it does.  The name of the function/script should link to the file in the repository on GitHub.
-
+  [finalCaseA.m](../blob/main/finalCaseA.m) - Varies initial velocity or flight path angle
+  
   # Figures
 
   ## Fig. 1: Single Parameter Variation
