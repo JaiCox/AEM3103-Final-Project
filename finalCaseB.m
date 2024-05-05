@@ -1,0 +1,54 @@
+%% Case B: Monte Carlo Problem
+% This case uses rand to generate random values for both V and gamma then
+% plots them along with an average trajectory
+
+	% Creates the array with equal step sizes 
+    to		=	0;			% Initial Time, sec
+	tf		=	6;			% Final Time, sec
+	tspan	=	to:.01:tf;
+
+    figure
+	
+    for i=1:100         % Creates 100 runs with diffrent parameters
+        velocityVal = rand(1);      % Generates each velocity value
+        gamVal = rand(1);           % Generates each gamma value
+       
+        V = 2 + (5.5 * velocityVal);        
+        Gam = -.5 + (.9 * gamVal);   
+        xo		=	[V;Gam;H;R];
+	    [ta,xa]	=	ode23('EqMotion',tspan,xo);
+        
+        plot(xa(:,4),xa(:,3),color = [0 0 0])
+        hold on
+        tempHeight = xa(:,3);       % Stores Height Values for run
+        tempRange = xa(:,4);        % Stores Range Values for run
+        tempN = [tspan;tempHeight';tempRange']; 
+        N(:,:,i) = tempN;
+    end
+
+    pHeight = polyfit(N(1,:,:),N(2,:,:),5);     % Fits Height Values
+    pRange = polyfit(N(1,:,:),N(3,:,:),5);      % Fits Range Values
+
+    Hfit = polyval(pHeight,tspan);     % Evaluates the height polynomial
+    Rfit = polyval(pRange,tspan);      % Evaluates the range polynomial
+
+    % Rearranges array values for height and range to prep for averaging
+    arrangeAvgHeight = permute(N(2,:,:),[1 3 2]);
+    arrangeAvgRange = permute(N(3,:,:),[1 3 2]);  
+    
+    % Takes the mean of the height and range arrays
+    meanAvgHeight = mean(arrangeAvgHeight);
+    meanAvgRange = mean(arrangeAvgRange);
+
+    % Reshapes the arrays to be a single column vector
+    avgHeight = reshape(meanAvgHeight(1,1,:),[601,1]);
+    avgRange = reshape(meanAvgRange(1,1,:),[601,1]);
+    
+    % Plots and labels Average Trajectory
+    avgTraj = plot(avgRange,avgHeight,'-m','LineWidth',3);
+    
+    grid
+    xlabel('Range, m') 
+    ylabel('Height, m')
+    title("Randomizing Initial Velocity and Flight Path Angle")
+    legend(avgTraj, 'Average Trajectory')

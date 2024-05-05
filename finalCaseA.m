@@ -1,3 +1,6 @@
+%% Case A: Single Parameter
+% This case changes a single parameter (V or gamma) while keeping 
+% the other constant
 
 %	Sets needed inital values and time span
 	to		=	0;			% Initial Time, sec
@@ -31,10 +34,10 @@
 
 	
     figure
-    subplot(1,2,1)
+    subplot(2,1,1)
 	plot(xv1(:,4),xv1(:,3),'r',xv2(:,4),xv2(:,3),'k',xv3(:,4),xv3(:,3),'g')
 	xlabel('Range, m'), ylabel('Height, m'), grid
 
-    subplot(1,2,2)
+    subplot(2,1,2)
     plot(xg1(:,4),xg1(:,3),'r',xg2(:,4),xg2(:,3),'k',xg3(:,4),xg3(:,3),'g')
 	xlabel('Range, m'), ylabel('Height, m'), grid
