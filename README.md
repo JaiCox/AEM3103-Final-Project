@@ -10,6 +10,11 @@
   Reference the figures below as needed.
 
   *If the analysis falls short of the goal, this is your chance to explain what was done or what were the barriers.*
+  
+  | Parameters	| Minimum	| Nominal	| Maximum	|
+  | ----------- | ------------- | ------------- | ------------- |
+  | Initial Velocity (m/s) | 2.0 | 3.55 | 7.5 |
+  | Flight Path Angle (rad)| -0.5| -0.18| 0.4 | 
  
   # Code Listing
   [paperAirplane.m](https://github.com/JaiCox/AEM3103-Final-Project/blob/main/paperAirplane.m) - Runs setupSim and plots results from original experiment
@@ -36,11 +41,13 @@
   Briefly describe what is being shown in the figure.
 
   ## Fig. 2: Monte Carlo Simulation
+  ![Random variation and avg trajectory](https://github.com/JaiCox/AEM3103-Final-Project/blob/main/Figures/cseBFig.jpg)
   <2D trajectories simulated using random sampling of parameters, overlay polynomial fit onto plot.>
 
   Briefly describe what is being shown in the figure.
 
  ## Fig. 3: Time Derivatives
+  ![Time Derivatives](https://github.com/JaiCox/AEM3103-Final-Project/blob/main/Figures/derivFig.jpg)
  <Time-derivative of height and range for the fitted trajectory>
 
   Briefly describe what is being shown in the figure.
