@@ -34,10 +34,15 @@
 
 	
     figure
+    hold on
+
     subplot(2,1,1)
 	plot(xv1(:,4),xv1(:,3),'r',xv2(:,4),xv2(:,3),'k',xv3(:,4),xv3(:,3),'g')
 	xlabel('Range, m'), ylabel('Height, m'), grid
+    title('Varying Initial Velocity')
 
     subplot(2,1,2)
     plot(xg1(:,4),xg1(:,3),'r',xg2(:,4),xg2(:,3),'k',xg3(:,4),xg3(:,3),'g')
 	xlabel('Range, m'), ylabel('Height, m'), grid
+    title('Varying ')
+    title('Varying Initial Flight Path Angle')
