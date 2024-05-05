@@ -35,19 +35,18 @@
 
   ## Fig. 1: Single Parameter Variation
   ![Single Parameter fig](https://github.com/JaiCox/AEM3103-Final-Project/blob/main/Figures/caseAFig.jpg)
-  <2D trajectory simulated by varying single parameter at at time>
-  <The above plot should also show the nominal trajectory>
 
-  Briefly describe what is being shown in the figure.
+  The top graph varies the inital velocity of a paper plane at the specified values and with a constant flight path angle and shows the effect on the 2D motion. 
+  While the secound graph shows the same effects, but velocity is constants and the flight path angle is varied.
 
   ## Fig. 2: Monte Carlo Simulation
   ![Random variation and avg trajectory](https://github.com/JaiCox/AEM3103-Final-Project/blob/main/Figures/cseBFig.jpg)
-  <2D trajectories simulated using random sampling of parameters, overlay polynomial fit onto plot.>
 
-  Briefly describe what is being shown in the figure.
+  This case uses 100 randomly generated runs with different initial velocities and flight path angles and plots them together. 
+  The pink line is a average trajectory of the 100 flights fit using a 5th order polynomial.
 
  ## Fig. 3: Time Derivatives
   ![Time Derivatives](https://github.com/JaiCox/AEM3103-Final-Project/blob/main/Figures/derivFig.jpg)
- <Time-derivative of height and range for the fitted trajectory>
 
-  Briefly describe what is being shown in the figure.
+  The top graph shows the time derivative for the range values of the average trajectory calculated in case B,
+  and the bottom graph is the time derivative of the height values for the average trajectory.
