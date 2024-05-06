@@ -19,10 +19,8 @@
 
   Finally, from the third figure which shows the time derivatives of the average trajectory for height and range, we find that both create a sinusoidal type wave then as time contiues approach a single value.
   This further supports the claim of the plane acheiving trim as the rates of change slow to be almost constant meaning that it is in stable glide. In the end varying the inital velocity has a greater affect on the 2D motion of the plane 
-  then the flight path angle, and the plane acheives trim after 5 meters
+  then the flight path angle, and the plane acheives trim after 5 meters.
   
-  Summarized what was accomplished in this study.  Describe 2-4 observations from simulating the flight path.
-  Reference the figures below as needed.
   
   | Parameters	| Minimum	| Nominal	| Maximum	|
   | ----------- | ------------- | ------------- | ------------- |
